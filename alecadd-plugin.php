@@ -1,32 +1,19 @@
 <?php
     /**
-     * Plugin Name: Plugin Dev Part 2
+     * Plugin Name: Alecaddd
      * Description: This is the ultimate WordPress plugin development
      * Plugin URL: http://localhost:8888/webapick/plugin
      * Author: Nymul Isam Moon
      * Author URI: https://nymul-islam-moon.github.io/
-     * version: 0.0.1
+     * version: 1.0.0
      * License: GPLv2 or later
-     * Licnse URL: https:www.gnu.org/licenses/gpl-2.0.html
+     * License URL: https:www.gnu.org/licenses/gpl-2.0.html
      */
 
-//    if (!defined('ABSPATH')) {
-//        die;
-//    }
-
-    # OR You can use
     defined('ABSPATH') or die('Hay, You can not access the area');
 
-     # Or can use
-//    if(!function_exists('add_action')) {
-//        echo 'hay you do not have the access to the area!';
-//        exit;
-//    }
-
-    class alecaddPlugin
+    class AlecadddPlugin
     {
-        # methods
-
         /**
          * Constructor for the class
          */
@@ -35,23 +22,31 @@
 
         }
 
-        public function method1()
+        public function activate()
         {
-
+            // generated a CPT
+            // flush rewrite rules
         }
 
-        public function method2()
+        public function deactivate()
         {
+            // flush rewrite rules
+        }
 
+        public function uninstall() {
+            // delete CPT
+            // delete all the plugin data from the DB
         }
     }
 
-    if (class_exists('alecaddPlugin')){
-        $alecadddPlugin = new alecaddPlugin();
+    if ( class_exists( 'AlecadddPlugin' ) ) {
+        $alecadddPlugin = new AlecadddPlugin();
     }
 
     # Activation
+    register_activation_hook( __FILE__, array( $alecadddPlugin, 'activate' ) );
 
     # Deactivating
+    register_deactivation_hook( __FILE__, array( $alecadddPlugin, 'deactivate' ) );
 
     # Uninstall

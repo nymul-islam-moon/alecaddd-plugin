@@ -1,0 +1,19 @@
+{
+    "name": "alecaddd/alecaddd-plugin",
+    "description": "A plugin example",
+    "type": "project",
+    "license": "GPL",
+    "autoload": {
+        "psr-4": {
+            "Alecaddd\\AlecadddPlugin\\": "inc/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Nymul Islam Moon",
+            "email": "nymulislam.webappick@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

@@ -37,6 +37,11 @@
             register_post_type( 'book', [ 'public' => true , 'label' => 'Books' ] );
         }
 
+        public function enqueue() {
+            // enqueue all our scripts
+//            wp_enqueue_style( 'mypluginstyle',  )
+        }
+
     }
 
     if ( class_exists( 'AlecadddPlugin' ) ) {

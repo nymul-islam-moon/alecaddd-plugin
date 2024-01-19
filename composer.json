@@ -5,13 +5,13 @@
     "license": "GPL",
     "autoload": {
         "psr-4": {
-            "Alecaddd\\AlecadddPlugin\\": "inc/"
+            "Inc\\": "inc/"
         }
     },
     "authors": [
         {
-            "name": "Nymul Islam Moon",
-            "email": "nymulislam.webappick@gmail.com"
+            "name": "Nymul Islam",
+            "email": "towkir1997islam@gmail.com"
         }
     ],
     "minimum-stability": "dev",

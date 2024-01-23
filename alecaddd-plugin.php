@@ -2,7 +2,7 @@
     /**
      * Plugin Name: Alecaddd
      * Description: This is the ultimate WordPress plugin development
-     * Plugin URL: http://localhost:8888/webapick/plugin
+     * Plugin URL: https://github.com/nymul-islam-moon/alecaddd-plugin
      * Author: Nymul Isam Moon
      * Author URI: https://nymul-islam-moon.github.io/
      * version: 1.0.0
